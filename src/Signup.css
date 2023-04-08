@@ -1,0 +1,108 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242D34;
+}
+
+
+#root {
+    width: 570px;
+    height: 630px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+img {
+    padding-top: 30px;
+    color: white;
+}
+
+h1 {
+    font-size :29px;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+    
+
+}
+.textpass {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    font-size: large;
+    border-style: double;
+    border-radius: 6px;
+    margin-top: 10px;
+    border-color: #191e21;
+    color: white;
+    padding-left: 10px; /* add some left padding */
+  }
+  
+  .textpass::placeholder {
+    transform: translateX(4px);
+  }
+  
+  .textpass:focus {
+    outline: 1px solid #1DA1F2;
+  }
+  
+  .textpass:focus::placeholder {
+    color: #1DA1F2;
+    transform: translate(5px,-20px);
+    font-size: small;
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  }
+
+  .textpass::selection {
+    background-color: #1DA1F2;
+  }
+  
+
+button {
+    width: 100%;
+    height : 40px;
+    background-color: rgb(255, 255, 255);
+    font-size: medium;
+    border-style: double;
+    border-radius: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+span {
+    color: #71767b;
+    font-size: medium;
+    transform: translate(-3px,-45px);
+}
+
+a {
+    text-decoration: none;
+    color :#1DA1F2;
+}
