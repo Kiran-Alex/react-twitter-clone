@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Login.css"
+import "./styles/Login.css"
 import "./assets/logo.png"
 import { Link, useNavigate } from 'react-router-dom'
  function Login() {
