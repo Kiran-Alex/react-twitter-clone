@@ -13,6 +13,7 @@ import { Link, useNavigate } from 'react-router-dom'
         <button>Log in</button>
       </form>
       <span> No account ? <Link to="/signup">Sign up</Link></span>
+     <Link id='gl' to="/homepage"> Guest Login</Link>
     </div>
   )
 }
