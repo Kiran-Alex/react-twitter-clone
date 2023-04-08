@@ -11,9 +11,10 @@ import { Link, useNavigate } from 'react-router-dom'
         <input type='text' className='textpass' placeholder='username'/>
         <input type='password' className='textpass' placeholder='password'/>
         <button>Log in</button>
+        <button id='gll' ><Link  to="/homepage"> Guest Login</Link></button>
       </form>
       <span> No account ? <Link to="/signup">Sign up</Link></span>
-     <Link id='gl' to="/homepage"> Guest Login</Link>
+     {/* <Link id='gl' to="/homepage"> Guest Login</Link> */}
     </div>
   )
 }

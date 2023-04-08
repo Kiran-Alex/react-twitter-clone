@@ -102,7 +102,7 @@ button {
 span {
     color: #71767b;
     font-size: medium;
-    transform: translate(-66px,-45px);
+    transform: translate(-1px,-25px);
 }
 
 a {
@@ -110,16 +110,19 @@ a {
     color :#1DA1F2;
 }
 
-#gl {
-  background-color: #1DA1F2;
-  color: white;
-  padding: 6px 26px 8px 26px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transform: translateY(16px);
-  font-weight:normal;
+#gll {
+  display: block;
+  background-color: #1a87ca;
+  padding: 0px;
+}
+#gll a {
+  
+  color:#ffffff;
+  padding: 10px 105px 10px 105px;
+  border-radius: 24px;
+
 }
 
-#gl:hover {
-  background-color: #1a87ca;
+#gll:hover {
+  background-color:#1DA1F2;
 }
