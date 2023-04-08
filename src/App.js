@@ -2,16 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 import { Route,Routes,Navigate, Link } from 'react-router-dom';
 import Login from './Login';
+import React from 'react';
+import Signup from './Signup'
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello kiran</h1>
+    <React.Fragment>
       <Routes>
       <Route path="/login" element={<Login/>} />
       <Route path='/' element={ <Navigate to="/login"  replace/>}/>
+      <Route path='/signup' element={<Signup/>}/>
       </Routes>
-    </div>
+    </React.Fragment>
   );
 }
 
