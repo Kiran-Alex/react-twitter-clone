@@ -1,4 +1,4 @@
-body {
+.page-wrapper {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@ body {
 }
 
 
-#root {
+.page-content {
     width: 570px;
     height: 630px;
     background-color: rgb(0, 0, 0);

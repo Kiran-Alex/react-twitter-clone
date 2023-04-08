@@ -12,7 +12,7 @@ function App() {
       <Route path="/login" element={<Login/>} />
       <Route path='/' element={ <Navigate to="/login"  replace/>}/>
       <Route path='/signup' element={<Signup/>}/>
-      <Route path='/homepage' element={<Home/>}/>
+      <Route path='/home' element={<Home/>}/>
       </Routes>
     </React.Fragment>
   );
