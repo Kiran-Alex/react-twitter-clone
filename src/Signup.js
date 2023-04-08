@@ -10,7 +10,7 @@ import "./styles/Signup.css"
         <h1>Join Twitter today</h1>
         <input type='text' className='textpass' placeholder='username'/>
         <input type='password' className='textpass' placeholder='password'/>
-        <button>Log in</button>
+        <button>Sign up</button>
       </form>
       <span>Have an account already ? <Link to="/login">Log in</Link></span>
     </div>
