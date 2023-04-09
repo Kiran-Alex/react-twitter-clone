@@ -3,7 +3,6 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .sidebar {
@@ -39,8 +38,8 @@
     
 }
 
-img {
-    transform: scale(0.4) translate(-150px , -150px);
+.sidebar-options-logo img {
+    transform: scale(0.35) translate(-86px , -190px);
 }
 
 .sidebar-options-content {
@@ -54,35 +53,114 @@ img {
     align-items: left;
 }
 
-span {
+.sa {
     display: flex;
     flex-direction: row;
     transform: translate(40px,3px) scale(1.3);
+    width: 128px;
+    height: 27px;
+    padding: 7px;
+    border-radius: 23px;
 }
-span a {
+.sa a {
     margin-left: 10px;
+    color: white;
+}
+
+.sa:hover {
+    background-color: #16181c;
 }
 
 .sidebar-options-tweet {
     width: 100%;
     height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sidebar-options-tweet a {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    padding: 13px 85px 13px 85px;
+    border-radius: 26px;
+    font-size: larger;
+    margin-right: 13px;
+    font-weight: bold;
 }
 
 .sidebar-profile {
-    background-color: blue;
     width: 100%;
     height: 80px;
     margin:10px 0px 8px 0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sidebar-profile-content{
+    width:90%;
+    height :70%;
+    display: flex;
+    flex-direction: row;
+    padding: 6px 12px;
+    border-radius: 30px;
+}
+
+.sidebar-profile-content:hover {
+    background-color:#16181c ;
+}
+
+.sidebar-profile-content-image{
+    width: 20%;
+    height: 100%;
+}
+
+#profile-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-profile-content-content{
+    margin-left: 7px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-profile-content-content-text {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sidebar-profile-content-content-text span {
+    transform: translate(0px,5px);
+    font-weight: normal;
+}
+
+.sidebar-profile-content-content-text #spbold {
+    font-weight: bold;
+    color: white;
 }
 
 .content {
-    width: 576px;
+    width: 587px;
     border: 2px solid #2f3336;
 }
 
 .widget {
-    width: 550px;
+    width: 522px;
 }
+
+
 
 
 

@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom'
     <div className='page-wrapper'>
       <div className='page-content'>
     <div className='container' >
-      <img src='https://uc29036e0eb33c4dda7d9182a449.previews.dropboxusercontent.com/p/thumb/AB1qvOIAmPYD0oZxCEhrJT0oTHQkGmHhVW_JArkkLwd483vodZgDyvfn8N2sIGZ7OF2BGokomVhpcg5jr3T6gwAV1pppnsCMach-tM_s6G78fVRbQk-TkRfaNjH-jzOzqx_h-RpRgFs15K6o01M5V4o20zVW4iNp5RD3QzHAUDbzqgh7gPPQjFNKplvtlBi4WH7B2dBriRYJL0Fhu-NrKH3Nu75EBZl8c_hV1vYhXqx1f7dPML7oeEIOOEhwBS7aFUUXkkyaIQvMOMR0_SWbHmrLu0hy8I_j-lSLe8iaMUgBVXIy1aJaHINS9XP2G6_EzfUDVcWCb4yCe8cNpVFQGpgtb87Y-0dMHZNARVCqPQnedNf9nHAw-4r-4S39CirPcZO3MI2EOmutLgVDUojS3DiL64s4GCmmT7NRRjv019x3XA/p.png' alt='twitter logo' draggable="false"/>
+      <img src='https://previews.dropbox.com/p/thumb/AB0P0bDdNAtIo0LI-xbgOVKbao-SJfG4jhH36IfTIBQ335YE4ZSlm1yrajuWhWabZNh8uShLfmCkDy6PDnsosCKpKaN9NmH9xkMj9dIY_3fyOBc57AizcB4SQ0-GPwNmahvpAnwNF-fzrAdL3qm7FDik0hDaggj0CSgikCGVYcbWpcrWIyIIrIOV3OWxTujGgaAKaypRwCXVnpHSRjQ1By9JEtOi8ICYH-Pxr4iXDQi4G6uhUPiwPtjmRh16g7s7p02XF9x9UC6ullTkGo5mEZjKony5O3WmnGiBXtBvNWDjUXQWKJf8ENwMG4ktQuyxfBvthZKb14uPYA-on91ccttFMsn2ANOWG8WUa-0xd1SZ_lDKwRsd5e7TD8vJFC9zymI/p.png' alt='twitter logo' draggable="false"/>
       <form>
         <h1>Sign in to Twitter</h1>
         <input type='text' className='textpass' placeholder='username'/>

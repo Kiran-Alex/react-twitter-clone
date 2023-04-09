@@ -7,10 +7,15 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import TurnedInNotOutlinedIcon from '@mui/icons-material/TurnedInNotOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 import { Link } from 'react-router-dom';
+import {useNavigate} from "react-router-dom"
 
 function Home() {
-
+  let navigate = useNavigate();
+      function Handleclick(path) {
+        navigate(path)
+      }
   
   return (
     <div className='body'>
@@ -18,25 +23,34 @@ function Home() {
       <div className='sidebar-content'>
         <div className='sidebar-options'>
         <div className='sidebar-options-logo'>
-        <img src='https://uc29036e0eb33c4dda7d9182a449.previews.dropboxusercontent.com/p/thumb/AB1qvOIAmPYD0oZxCEhrJT0oTHQkGmHhVW_JArkkLwd483vodZgDyvfn8N2sIGZ7OF2BGokomVhpcg5jr3T6gwAV1pppnsCMach-tM_s6G78fVRbQk-TkRfaNjH-jzOzqx_h-RpRgFs15K6o01M5V4o20zVW4iNp5RD3QzHAUDbzqgh7gPPQjFNKplvtlBi4WH7B2dBriRYJL0Fhu-NrKH3Nu75EBZl8c_hV1vYhXqx1f7dPML7oeEIOOEhwBS7aFUUXkkyaIQvMOMR0_SWbHmrLu0hy8I_j-lSLe8iaMUgBVXIy1aJaHINS9XP2G6_EzfUDVcWCb4yCe8cNpVFQGpgtb87Y-0dMHZNARVCqPQnedNf9nHAw-4r-4S39CirPcZO3MI2EOmutLgVDUojS3DiL64s4GCmmT7NRRjv019x3XA/p.png' alt='twitter logo' draggable="false"/>
+        <img src='https://previews.dropbox.com/p/thumb/AB0P0bDdNAtIo0LI-xbgOVKbao-SJfG4jhH36IfTIBQ335YE4ZSlm1yrajuWhWabZNh8uShLfmCkDy6PDnsosCKpKaN9NmH9xkMj9dIY_3fyOBc57AizcB4SQ0-GPwNmahvpAnwNF-fzrAdL3qm7FDik0hDaggj0CSgikCGVYcbWpcrWIyIIrIOV3OWxTujGgaAKaypRwCXVnpHSRjQ1By9JEtOi8ICYH-Pxr4iXDQi4G6uhUPiwPtjmRh16g7s7p02XF9x9UC6ullTkGo5mEZjKony5O3WmnGiBXtBvNWDjUXQWKJf8ENwMG4ktQuyxfBvthZKb14uPYA-on91ccttFMsn2ANOWG8WUa-0xd1SZ_lDKwRsd5e7TD8vJFC9zymI/p.png' alt='twitter logo' draggable="false"/>
         </div>
 
         <div className='sidebar-options-content'>
-        <span><HomeIcon sx={{ color: 'white' }}/><Link>Home</Link></span>
-        <span><TagIcon sx={{ color: 'white' }}/><Link>Explore</Link></span>
-        <span><NotificationsNoneIcon sx={{ color: 'white' }}/><Link>Notifications</Link></span>
-        <span><EmailOutlinedIcon sx={{color : "white"}}/><Link>Messages</Link></span>
-        <span><TurnedInNotOutlinedIcon sx={{color : "white"}} /><Link>Bookmarks</Link></span>
-        <span><PersonOutlineOutlinedIcon  sx={{color : "white"}} /><Link>Profile</Link></span>
-        <span><MoreHorizIcon sx={{color : "white"}} /><Link>More</Link></span>
-        <span><Link>tweet button</Link></span>
+        <span className='sa' onClick={()=>{Handleclick("/signup")}}><HomeIcon sx={{ color: 'white' }}/><Link onClick={(e) => e.preventDefault()}>Home</Link></span>
+        <span className='sa'><TagIcon sx={{ color: 'white' }}/><Link>Explore</Link></span>
+        <span className='sa'><NotificationsNoneIcon sx={{ color: 'white' }}/><Link>Notifications</Link></span>
+        <span className='sa'><EmailOutlinedIcon sx={{color : "white"}}/><Link>Messages</Link></span>
+        <span className='sa'><TurnedInNotOutlinedIcon sx={{color : "white"}} /><Link>Bookmarks</Link></span>
+        <span className='sa'><PersonOutlineOutlinedIcon  sx={{color : "white"}} /><Link>Profile</Link></span>
+        <span className='sa'><MoreHorizIcon sx={{color : "white"}} /><Link>More</Link></span>
         </div>
         <div className='sidebar-options-tweet'>
-
+        <div className='sat'><Link>Tweet</Link></div>
         </div>
         </div>
         <div className='sidebar-profile'>
-
+          <div className='sidebar-profile-content'>
+            <div className='sidebar-profile-content-image'>
+            <AccountCircleSharpIcon id="profile-icon" sx={{color : "white"}} />
+            </div>
+            <div className='sidebar-profile-content-content'>
+              <div className='sidebar-profile-content-content-text'>
+                <span id='spbold'>GuestLogin <span>@guestlo66</span> </span>
+              </div>
+              <MoreHorizIcon sx={{color : "white"}}/>
+            </div>
+          </div>
         </div>
       </div>
       </div>
