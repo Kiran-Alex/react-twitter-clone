@@ -71,10 +71,12 @@ function Home() {
             <div className='ctbc-img'>
             <AccountCircleSharpIcon id="profile-icon" sx={{color : "white"}}/>
             </div>
-            <div classname="ctbc-txb">
-              <input type='text'/>
+            <div className="ctbc-txb">
+             <input type='text' className="teext"placeholder="What's Happening ?"/>
             </div>
-            <div classname="ctbc-twb"></div>
+            <div className="ctbc-twb">
+              <span>Tweet</span>
+            </div>
           </div>
         </div>
         <div className='content-field'>
