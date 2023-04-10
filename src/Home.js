@@ -57,7 +57,29 @@ function Home() {
 
 
       <div className='content'>
-
+        <div className='content-home'>
+          <div className='content-home-text1'>
+          <h3>Home</h3>
+          </div>
+          <div className='content-home-text2'>
+            <Link className='ch21'>For you</Link>
+            <Link className='ch21'>Following</Link>
+          </div>
+        </div>
+        <div className='content-tweetbox'>
+          <div className='ctbc'>
+            <div className='ctbc-img'>
+            <AccountCircleSharpIcon id="profile-icon" sx={{color : "white"}}/>
+            </div>
+            <div classname="ctbc-txb">
+              <input type='text'/>
+            </div>
+            <div classname="ctbc-twb"></div>
+          </div>
+        </div>
+        <div className='content-field'>
+          
+        </div>
       </div>
       <div className='widget'>
         
