@@ -14,8 +14,8 @@
 
 .sidebar-content {
     height: 100vh;
-    width :66%;
-    padding :0px 8px 0px 8px ;
+    width: 66%;
+    padding: 0px 8px 0px 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,18 +29,18 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
-    
+
 }
 
 .sidebar-options-logo {
 
     width: 100%;
     height: 70px;
-    
+
 }
 
 .sidebar-options-logo img {
-    transform: scale(0.35) translate(-86px , -190px);
+    transform: scale(0.35) translate(-86px, -190px);
 }
 
 .sidebar-options-content {
@@ -57,12 +57,13 @@
 .sa {
     display: flex;
     flex-direction: row;
-    transform: translate(40px,3px) scale(1.3);
+    transform: translate(40px, 3px) scale(1.3);
     width: 128px;
     height: 27px;
     padding: 7px;
     border-radius: 23px;
 }
+
 .sa a {
     margin-left: 10px;
     color: white;
@@ -94,16 +95,16 @@
 .sidebar-profile {
     width: 100%;
     height: 80px;
-    margin:10px 0px 8px 0px ;
+    margin: 10px 0px 8px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.sidebar-profile-content{
-    width:90%;
-    height :70%;
+.sidebar-profile-content {
+    width: 90%;
+    height: 70%;
     display: flex;
     flex-direction: row;
     padding: 6px 12px;
@@ -111,10 +112,10 @@
 }
 
 .sidebar-profile-content:hover {
-    background-color:#16181c ;
+    background-color: #16181c;
 }
 
-.sidebar-profile-content-image{
+.sidebar-profile-content-image {
     width: 20%;
     height: 100%;
 }
@@ -124,7 +125,7 @@
     height: 100%;
 }
 
-.sidebar-profile-content-content{
+.sidebar-profile-content-content {
     margin-left: 7px;
     width: 80%;
     height: 100%;
@@ -142,8 +143,9 @@
     align-items: center;
     justify-content: flex-start;
 }
+
 .sidebar-profile-content-content-text span {
-    transform: translate(0px,5px);
+    transform: translate(0px, 5px);
     font-weight: normal;
 }
 
@@ -157,24 +159,26 @@
     border: 2px solid #2f3336;
 }
 
-.content-home{
+.content-home {
     height: 6.7rem;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #2f3336;
-    position :sticky;
+    position: sticky;
     top: 0;
     backdrop-filter: blur(12px);
 }
+
 .content-home-text1 {
     height: 50%;
-    color:white;
-    display:flex;
+    color: white;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-left: 0.7rem;
 }
-.content-home-text2{
+
+.content-home-text2 {
     display: flex;
     flex-direction: row;
     height: 50%;
@@ -189,11 +193,11 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    color:white
+    color: white
 }
 
 .ch21:hover {
-    background-color:#16181c
+    background-color: #16181c
 }
 
 .content-tweetbox {
@@ -204,9 +208,10 @@
     flex-direction: row;
     justify-content: center;
 }
+
 .ctbc {
     height: 50%;
-    width:93%;
+    width: 93%;
     display: flex;
     flex-direction: row;
     display: flex;
@@ -218,7 +223,7 @@
     width: 10%;
 }
 
-.ctbc-txb  {
+.ctbc-txb {
     width: 50%;
     height: 100%;
     display: flex;
@@ -242,7 +247,7 @@ input.teext:focus {
 }
 
 .ctbc-twb {
-    background-color:#0F4E78;
+    background-color: #0F4E78;
     width: 26%;
     border-radius: 30px;
     display: flex;
@@ -253,7 +258,7 @@ input.teext:focus {
 .ctbc-twb span {
     font-size: large;
     font-weight: bold;
-    transform: translate(0px,0px);
+    transform: translate(0px, 0px);
     color: #6F787F;
 }
 
@@ -261,7 +266,90 @@ input.teext:focus {
     width: 522px;
 }
 
+.fbx-content {
+    height: fit-content;
+    width: 94%;
+    border-bottom: 1px solid #2f3336;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0px 17px;
+}
+
+.fbx-content-mimg {
+    width: 10.5%;
+}
+
+.mimg {
+    padding-top: 7px;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.mimg svg {
+    width: 100%;
+    height: fit-content;
+}
 
 
+.fbx-content-main {
+    width: 89.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
 
+.fbx-content-minfo {
+    width: 100%;
+    height: fit-content;
+}
 
+.fbx-content-mi-username {
+    height: 33.3%;
+    width: 100%;
+    color: white;
+    padding-top: 10px;
+}
+
+.fbx-content-mi-text {
+    height: fit-content;
+    width: 100%;
+    color: white;
+
+}
+
+.fbx-content-mi-text p {
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.fbx-content-features {
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+.fbx-content-features-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+}
+
+.fcfi-crlas span {
+    margin-left: 20px;
+}
+
+.fcfi-crlas svg {
+    transform: translate(0px, 5px);
+}
+
+.fcfi-crlas #shareicon {
+    margin-right: 60px;
+}
