@@ -10,6 +10,8 @@
     width: 410px;
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
 }
 
 .sidebar-content {
@@ -156,16 +158,22 @@
 
 .content {
     width: 587px;
-    border: 2px solid #2f3336;
+}
+
+.content-field {
+    border: 1px solid #2f3336;
+    border-top: 0px;
 }
 
 .content-home {
     height: 6.7rem;
+    width: 585px;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #2f3336;
-    position: sticky;
+    border: 1px solid #2f3336;
+    position: fixed;
     top: 0;
+    z-index: 1;
     backdrop-filter: blur(12px);
 }
 
@@ -197,7 +205,7 @@
 }
 
 .ch21:hover {
-    background-color: #16181c
+    background-color: #6d6d6d2e;
 }
 
 .content-tweetbox {
@@ -207,6 +215,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border: 1px solid #2f3336;
+    border-top: 0px ;
+    margin-top: 109px;
 }
 
 .ctbc {
@@ -265,6 +276,7 @@ input.teext:focus {
 .widget {
     width: 522px;
 }
+
 
 .fbx-content {
     height: fit-content;

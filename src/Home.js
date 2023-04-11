@@ -22,12 +22,50 @@ function Home() {
     navigate(path)
   }
   // {content,name,time,icon}
-  // const feedbox = ( ) => {
-  //   return(
+ 
+  const Feedbox =() => {
+      return(          <div className='fbx-content'>
+      <div className='fbx-content-mimg'>
+        <div className='mimg'>
+          <AccountCircleSharpIcon sx={{ color: "white" }} />
+        </div>
+      </div>
+      <div className='fbx-content-main'>
+        <div className='fbx-content-minfo'>
+          <div className='fbx-content-mi-username'>
+            <b>KiranALex </b><span>@kiranalex</span><span> 2h</span>
+          </div>
+          <div className='fbx-content-mi-text'>
+            <p>btrebebrbtrebebrbtrebebrbt</p>
+          </div>
 
-
-  //   )
-  // }
+          <div className='fbx-content-features'>
+            <div className='fbx-content-features-icons'>
+              <div className='fcfi-crlas'>
+                <ChatBubbleOutlineOutlinedIcon sx={{ color: "white" }} />
+                <span>3</span>
+              </div>
+              <div className='fcfi-crlas'>
+                <CachedOutlinedIcon sx={{ color: "white" }} />
+                <span>3</span>
+              </div>
+              <div className='fcfi-crlas'>
+                <FavoriteBorderOutlinedIcon sx={{ color: "white" }} />
+                <span>3</span>
+              </div>
+              <div className='fcfi-crlas'>
+                <BarChartSharpIcon sx={{ color: "white" }} />
+                <span>3</span>
+              </div>
+              <div className='fcfi-crlas'>
+                <IosShareSharpIcon id="shareicon" sx={{ color: "white" }} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>)
+  }
 
   return (
     <div className='body'>
@@ -92,47 +130,23 @@ function Home() {
           </div>
         </div>
         <div className='content-field'>
-          <div className='fbx-content'>
-            <div className='fbx-content-mimg'>
-              <div className='mimg'>
-                <AccountCircleSharpIcon sx={{ color: "white" }} />
-              </div>
-            </div>
-            <div className='fbx-content-main'>
-              <div className='fbx-content-minfo'>
-                <div className='fbx-content-mi-username'>
-                  <b>KiranALex </b><span>@kiranalex</span><span> 2h</span>
-                </div>
-                <div className='fbx-content-mi-text'>
-                  <p>btrebebrbtrebebrbtrebebrbt</p>
-                </div>
-
-                <div className='fbx-content-features'>
-                  <div className='fbx-content-features-icons'>
-                    <div className='fcfi-crlas'>
-                      <ChatBubbleOutlineOutlinedIcon sx={{ color: "white" }} />
-                      <span>3</span>
-                    </div>
-                    <div className='fcfi-crlas'>
-                      <CachedOutlinedIcon sx={{ color: "white" }} />
-                      <span>3</span>
-                    </div>
-                    <div className='fcfi-crlas'>
-                      <FavoriteBorderOutlinedIcon sx={{ color: "white" }} />
-                      <span>3</span>
-                    </div>
-                    <div className='fcfi-crlas'>
-                      <BarChartSharpIcon sx={{ color: "white" }} />
-                      <span>3</span>
-                    </div>
-                    <div className='fcfi-crlas'>
-                      <IosShareSharpIcon id="shareicon" sx={{ color: "white" }} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
+          <Feedbox/>
         </div>
       </div>
       <div className='widget'>
