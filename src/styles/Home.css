@@ -3,6 +3,7 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    overflow-y: scroll;
 }
 
 .sidebar {
@@ -154,13 +155,6 @@
 .content {
     width: 587px;
     border: 2px solid #2f3336;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.content::-webkit-scrollbar {
-    display: none;
 }
 
 .content-home{
