@@ -22,9 +22,10 @@ function Home() {
     navigate(path)
   }
   // {content,name,time,icon}
- 
-  const Feedbox =() => {
-      return(          <div className='fbx-content'>
+
+
+  const Feedbox = () => {
+    return (<div className='fbx-content'>
       <div className='fbx-content-mimg'>
         <div className='mimg'>
           <AccountCircleSharpIcon sx={{ color: "white" }} />
@@ -130,27 +131,37 @@ function Home() {
           </div>
         </div>
         <div className='content-field'>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
-          <Feedbox/>
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
+          <Feedbox />
         </div>
       </div>
       <div className='widget'>
+        <div className='widget-container'>
+          <div className='widget-search'>
+          <input type='text'  placeholder='search'/>
+          </div>
+          <div className='widget-wh'>
+            
+          </div>
+          <div className='widget-follow'>
 
+          </div>
+        </div>
       </div>
     </div>
   )
