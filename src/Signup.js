@@ -1,24 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles/Signup.css';
-import { useNavigate } from 'react-router-dom';
-
 
 function Signup() {
   const [Signuserdata, setSignuserdata] = useState([{ name: undefined, pass: undefined }]);
-  const [Usern, setUsern] = useState();
-  const [Passu, setPassu] = useState();
-  const [UuniqueCheck, setUuniqueCheck] = useState();
-  const [UpniqueCheck, setUpniqueCheck] = useState();
-  const [Checkedup,setCheckedup]=useState(false)
+  const [Usern, setUsern] = useState('');
+  const [Passu, setPassu] = useState('');
+  const [UuniqueCheck, setUuniqueCheck] = useState(true);
+  const [UpniqueCheck, setUpniqueCheck] = useState(true);
+  const [Checkedup, setCheckedup] = useState(false);
 
   const username = (e) => {
-    e.preventDefault();
     setUsern(e.target.value);
   };
 
   const password = (e) => {
-    e.preventDefault();
     setPassu(e.target.value);
   };
 
@@ -29,38 +25,34 @@ function Signup() {
     }
   }, []);
   
-
   const navigate = useNavigate();
 
   function toggleChange(e) {
     e.preventDefault()
-    let localstorage = JSON.parse(localStorage.getItem('user'));
+    let localstorage = JSON.parse(localStorage.getItem('user')) || [];
     let usercheck = localstorage.some((s) => s.name === Usern);
-    console.log(usercheck)
 
     if (/^[a-zA-Z0-9]+$/.test(Usern) === false || usercheck === true) {
       setUuniqueCheck(false);
-      setUpniqueCheck(true)
+      setUpniqueCheck(true);
     } else if (/^(?=.*[A-Za-z0-9])(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?])[A-Za-z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]{8,}$/.test(Passu) === false) {
       setUpniqueCheck(false);
-      setUuniqueCheck(true)
+      setUuniqueCheck(true);
     } else {
       let userpass = { name: Usern, pass: Passu };
       setSignuserdata([...Signuserdata, userpass]);
-      setUpniqueCheck(true)
-      setUuniqueCheck(true)
-      setCheckedup(true)
+      setUpniqueCheck(true);
+      setUuniqueCheck(true);
+      setCheckedup(true);
     }
   }
 
-
-
   useEffect(() => {
     if(Checkedup===true){
-    localStorage.setItem('user', JSON.stringify(Signuserdata)); 
-    navigate('/home')
-  }
-  }, [Signuserdata]);
+      localStorage.setItem('user', JSON.stringify(Signuserdata)); 
+      navigate('/home');
+    }
+  }, [Checkedup, Signuserdata, navigate]);
 
 
   return (
