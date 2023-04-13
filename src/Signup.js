@@ -23,8 +23,12 @@ function Signup() {
   };
 
   useEffect(() => {
-    setSignuserdata(JSON.parse(localStorage.getItem('user')));
+    const storedData = JSON.parse(localStorage.getItem('user'));
+    if (storedData && Array.isArray(storedData)) {
+      setSignuserdata(storedData);
+    }
   }, []);
+  
 
   const navigate = useNavigate();
 
