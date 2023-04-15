@@ -370,7 +370,7 @@ input.teext:focus {
 .widget-container {
        
         width: 358px;
-        height: 146vh;
+        height: 257vh;
         margin-left : 30px;
     }
 
@@ -423,3 +423,5 @@ input.teext:focus {
         position: sticky;
         top: 5rem;
     }
+
+    

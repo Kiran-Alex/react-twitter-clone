@@ -13,6 +13,7 @@ import CachedOutlinedIcon from '@mui/icons-material/CachedOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import BarChartSharpIcon from '@mui/icons-material/BarChartSharp';
 import IosShareSharpIcon from '@mui/icons-material/IosShareSharp';
+
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom"
 
@@ -69,6 +70,7 @@ function Home() {
   }
 
   return (
+    <div className='tweak'>
     <div className='body'>
       <div className='sidebar'>
         <div className='sidebar-content'>
@@ -162,6 +164,7 @@ function Home() {
 
           </div>
         </div>
+      </div>
       </div>
     </div>
   )
