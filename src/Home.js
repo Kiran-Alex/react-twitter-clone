@@ -72,6 +72,7 @@ function Home() {
   return (
     <div className='tweak'>
     <div className='body'>
+      
       <div className='sidebar'>
         <div className='sidebar-content'>
           <div className='sidebar-options'>
