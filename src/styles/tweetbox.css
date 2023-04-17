@@ -30,5 +30,36 @@ overflow-y: scroll;
     z-index: 1;
     top: 0;
     height: 745px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .tbcontainer {
+    background-color: black;
+    width: 600px;
+    height: 350px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tbc-header {
+    flex: 0.5;
+    background-color: red;
+  }
+  
+  .tbc-content {
+    flex: 2;
+    background-color: blue;
+  }
+
+  .tbc-footer{
+    flex: 0.6;
+    background-color: green;
+  }
+
+  .tbc-h-img
+  {
+
+  }
