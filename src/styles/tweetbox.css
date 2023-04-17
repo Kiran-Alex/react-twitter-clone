@@ -39,23 +39,22 @@ overflow-y: scroll;
     background-color: black;
     width: 600px;
     height: 350px;
-    border-radius: 16px;
     display: flex;
     flex-direction: column;
+    border-radius: 16px;
   }
 
   .tbc-header {
     flex: 0.5;
-    background-color: red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding : 0px 10px;
   }
   
   .tbc-content {
-    flex: 2;
+    flex: 3;
     background-color: blue;
   }
 
@@ -67,4 +66,9 @@ overflow-y: scroll;
   .tbc-h-img
   {
 
+  }
+
+  .tbc-h-ut span {
+    color:  rgb(29, 155, 240);
+    font-weight: bold;
   }

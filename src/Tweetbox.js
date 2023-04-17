@@ -31,8 +31,11 @@ function Tweetbox() {
               </div>
             </div>
             <div className='tbc-content'>
-            </div>
+              <div className='tbc-c-img'></div>
+              <div className='tbc-c-cont'>
             <div className='tbc-footer'></div>
+            </div>
+            </div>
           </div>
 
         </div>
