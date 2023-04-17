@@ -47,6 +47,11 @@ overflow-y: scroll;
   .tbc-header {
     flex: 0.5;
     background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
   }
   
   .tbc-content {

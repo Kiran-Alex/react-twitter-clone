@@ -26,7 +26,9 @@ function Tweetbox() {
               <div className='tbc-h-img'>
                   <CloseIcon sx={{color: "white"}}/>
               </div>
+              <div className='tbc-h-ut'>
               <span >Unsent Tweets</span>
+              </div>
             </div>
             <div className='tbc-content'>
             </div>
