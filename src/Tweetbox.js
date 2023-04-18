@@ -5,9 +5,17 @@ import CloseIcon from '@mui/icons-material/Close';
 import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 import BrokenImageOutlinedIcon from '@mui/icons-material/BrokenImageOutlined';
 import { Textarea } from '@chakra-ui/react';
+import GifBoxOutlinedIcon from '@mui/icons-material/GifBoxOutlined';
+import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBulletedOutlined';
+import SentimentSatisfiedAltOutlinedIcon from '@mui/icons-material/SentimentSatisfiedAltOutlined';
+import EventRepeatOutlinedIcon from '@mui/icons-material/EventRepeatOutlined';
+import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
+
+import { useNavigate } from 'react-router-dom';
 
 function Tweetbox() {
   const [text, setText] = useState("");
+  const navigate = useNavigate()
 
   const handleInputChange = (event) => {
     setText(event.target.value);
@@ -26,7 +34,7 @@ function Tweetbox() {
 
           <div className='tbcontainer'>
             <div className='tbc-header'>
-              <div className='tbc-h-img'>
+              <div className='tbc-h-img'  onClick= {()=> {navigate("/home")}}>
                 <CloseIcon sx={{ color: "white" }} />
               </div>
               <div className='tbc-h-ut'>
@@ -58,7 +66,19 @@ function Tweetbox() {
                     }}
                   />
                 </div>
-                <div className='tbc-c-cont-footer'></div>
+                <div className='tbc-c-cont-footer'>
+                  <div className='tbc-c-cont-f-cont-icons'>
+                    <BrokenImageOutlinedIcon sx={{color : " #1D9BF0"}}/>
+                    <GifBoxOutlinedIcon sx={{color:" #1D9BF0"}} />
+                    <FormatListBulletedOutlinedIcon sx={{color : " #1D9BF0"}}/>
+                    <SentimentSatisfiedAltOutlinedIcon sx={{color : " #1D9BF0"}}/>
+                    <EventRepeatOutlinedIcon sx={{color : " #1D9BF0"}}/>
+                    <PlaceOutlinedIcon sx={{color : "#0d456b"}}/>
+                  </div>
+                  <div className='tbc-c-cont-f-tb'>
+                    <span> Tweet</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

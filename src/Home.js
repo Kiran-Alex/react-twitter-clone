@@ -90,7 +90,7 @@ function Home() {
               <span className='sa'><MoreHorizIcon sx={{ color: "white" }} /><Link>More</Link></span>
             </div>
             <div className='sidebar-options-tweet'>
-              <div className='sat'><Link>Tweet</Link></div>
+              <div className='sat'  onClick={()=>{ Handleclick("/home/tweet-compose")}} ><Link>Tweet</Link></div>
             </div>
           </div>
           <div className='sidebar-profile'>
