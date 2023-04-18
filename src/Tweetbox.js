@@ -24,17 +24,18 @@ function Tweetbox() {
           <div className='tbcontainer'>
             <div className='tbc-header'>
               <div className='tbc-h-img'>
-                  <CloseIcon sx={{color: "white"}}/>
+                <CloseIcon sx={{ color: "white" }} />
               </div>
               <div className='tbc-h-ut'>
-              <span >Unsent Tweets</span>
+                <span >Unsent Tweets</span>
               </div>
             </div>
             <div className='tbc-content'>
               <div className='tbc-c-img'></div>
               <div className='tbc-c-cont'>
-            <div className='tbc-footer'></div>
-            </div>
+              <div className="tbc-c-cont-img"></div>
+              <div className='tbc-c-cont-c'></div>
+              </div>
             </div>
           </div>
 
