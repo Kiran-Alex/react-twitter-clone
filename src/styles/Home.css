@@ -64,6 +64,7 @@
     height: 27px;
     padding: 7px;
     border-radius: 23px;
+    cursor: pointer;
 }
 
 .sa a {

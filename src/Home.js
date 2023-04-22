@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./styles/Home.css"
 import HomeIcon from '@mui/icons-material/Home';
 import TagIcon from '@mui/icons-material/Tag';
@@ -19,10 +19,20 @@ import { useNavigate } from "react-router-dom"
 
 function Home() {
   let navigate = useNavigate();
+  const [Loguser,setLoguser] = useState("GuestLogin")
   function Handleclick(path) {
     navigate(path)
   }
-  // {content,name,time,icon}
+
+  useEffect(()=>{
+    const local = localStorage.getItem("Loggedname")
+    if (Loguser === null || undefined) {
+      setLoguser("GuestLogin")
+    }
+    else {
+    setLoguser(local)
+  }
+  },[])
 
 
   const Feedbox = () => {
@@ -77,11 +87,11 @@ function Home() {
         <div className='sidebar-content'>
           <div className='sidebar-options'>
             <div className='sidebar-options-logo'>
-              <img src='https://previews.dropbox.com/p/thumb/AB0P0bDdNAtIo0LI-xbgOVKbao-SJfG4jhH36IfTIBQ335YE4ZSlm1yrajuWhWabZNh8uShLfmCkDy6PDnsosCKpKaN9NmH9xkMj9dIY_3fyOBc57AizcB4SQ0-GPwNmahvpAnwNF-fzrAdL3qm7FDik0hDaggj0CSgikCGVYcbWpcrWIyIIrIOV3OWxTujGgaAKaypRwCXVnpHSRjQ1By9JEtOi8ICYH-Pxr4iXDQi4G6uhUPiwPtjmRh16g7s7p02XF9x9UC6ullTkGo5mEZjKony5O3WmnGiBXtBvNWDjUXQWKJf8ENwMG4ktQuyxfBvthZKb14uPYA-on91ccttFMsn2ANOWG8WUa-0xd1SZ_lDKwRsd5e7TD8vJFC9zymI/p.png' alt='twitter logo' draggable="false" />
+              <img src='https://previews.dropbox.com/p/thumb/AB6yqNlvM1vWZC548AI_qQFjL7-LH3cOiXhMNZeandvs2pEzRAQwPtSBa1vuvyhJAxGRfzXEZr4keEhEXUVssDsPqbk73tR1D2H3YJrlmAETSngY0kf4zk9dh_tmUD9kbwXd0CC4BTl4Ol-SYLQkl96VsQF340FIJ3s1omC0OOz-rtL1Mi28REYWVKhto97eWkUqDmASHWmTUkwYcAQPvV3YjLGIA1NzjUUFGxofshPmmrTplyu4myvDCUgpLA-VSRLvfwYmnlbp04z2v3m8PaFpTPMxC8UWUSyjMtBLcXXQ5-6R1ad9oQQaWVfYC41dW_mvHBxEI-fd0d3lYzzZ8rZD_hXaOryl3mRKcM1XNBzY8emjUsvukJ7vBPOw7DgRzlo/p.png' alt='twitter logo' draggable="false" />
             </div>
 
             <div className='sidebar-options-content'>
-              <span className='sa' onClick={() => { Handleclick("/signup") }}><HomeIcon sx={{ color: 'white' }} /><Link onClick={(e) => e.preventDefault()}>Home</Link></span>
+              <span className='sa'><HomeIcon sx={{ color: 'white' }} /><Link onClick={(e) => e.preventDefault()}>Home</Link></span>
               <span className='sa'><TagIcon sx={{ color: 'white' }} /><Link>Explore</Link></span>
               <span className='sa'><NotificationsNoneIcon sx={{ color: 'white' }} /><Link>Notifications</Link></span>
               <span className='sa'><EmailOutlinedIcon sx={{ color: "white" }} /><Link>Messages</Link></span>
@@ -100,7 +110,7 @@ function Home() {
               </div>
               <div className='sidebar-profile-content-content'>
                 <div className='sidebar-profile-content-content-text'>
-                  <span id='spbold'>GuestLogin <span>@guestlo66</span> </span>
+                  <span id='spbold'>{Loguser} <span>@{Loguser}</span> </span>
                 </div>
                 <MoreHorizIcon sx={{ color: "white" }} />
               </div>
