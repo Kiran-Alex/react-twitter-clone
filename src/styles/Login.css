@@ -29,6 +29,10 @@ h1 {
     margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
     width: 310px;
     height: 400px;
