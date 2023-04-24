@@ -413,7 +413,34 @@ input.teext:focus {
         width: 100%;
         background-color: #202327;
         border-radius: 20px;
+        display: flex;
+        flex-direction: column;
     }
+
+    .widget-wh-header-footer {
+        flex: 0.13;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .widget-wh-header-footer h2 {
+        margin: 0px;
+        color: white;
+    } 
+
+    .widget-wh-header-footer p {
+        color:rgb(29, 155, 240) ;
+        font-weight:regular;
+    } 
+
+    .widget-wh-content {
+        background-color: blue;
+        flex: 1;
+    }
+
+
 
     .widget-follow {
         height :22rem;

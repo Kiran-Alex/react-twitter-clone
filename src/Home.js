@@ -169,6 +169,15 @@ function Home() {
           <input type='text'  placeholder='search'/>
           </div>
           <div className='widget-wh'>
+            <div className='widget-wh-header-footer'>
+                <h2> What’s happening</h2>
+            </div>
+            <div className='widget-wh-content'>
+
+            </div>
+            <div className='widget-wh-header-footer'>
+                <p>Show more</p>
+            </div>
             
           </div>
           <div className='widget-follow'>
