@@ -79,6 +79,19 @@ function Home() {
     </div>)
   }
 
+  const widgetbox = () =>{
+      return(
+        <div className='wb-container'>
+          <div className='wb-c-c'>
+        
+          </div>
+          <div className='wb-c-options'>
+
+          </div>
+        </div>
+      )
+  }
+
   return (
     <div className='tweak'>
     <div className='body'>
