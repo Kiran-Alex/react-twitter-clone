@@ -13,6 +13,8 @@ import CachedOutlinedIcon from '@mui/icons-material/CachedOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import BarChartSharpIcon from '@mui/icons-material/BarChartSharp';
 import IosShareSharpIcon from '@mui/icons-material/IosShareSharp';
+import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
+
 
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom"
@@ -79,14 +81,16 @@ function Home() {
     </div>)
   }
 
-  const widgetbox = () =>{
+  const Widgetbox = () =>{
       return(
         <div className='wb-container'>
           <div className='wb-c-c'>
-        
+          <p>Trending in india</p>
+          <p className='hashtag'>#Kiran</p>
+          <p>20 tweets</p>
           </div>
           <div className='wb-c-options'>
-
+            <MoreHorizOutlinedIcon sx={{color : "grey"}} id="more"/>
           </div>
         </div>
       )
@@ -186,9 +190,13 @@ function Home() {
                 <h2> What’s happening</h2>
             </div>
             <div className='widget-wh-content'>
-
+              <Widgetbox/>
+              <Widgetbox/>
+              <Widgetbox/>
+              <Widgetbox/>
+              <Widgetbox/>
             </div>
-            <div className='widget-wh-header-footer'>
+            <div className='widget-wh-header-footer' id="w-footer">
                 <p>Show more</p>
             </div>
             

@@ -433,13 +433,60 @@ input.teext:focus {
     .widget-wh-header-footer p {
         color:rgb(29, 155, 240) ;
         font-weight:regular;
+        margin-top : 0 ;
+        margin-bottom : 0
     } 
 
+
     .widget-wh-content {
-        background-color: blue;
+        
         flex: 1;
     }
 
+    .wb-container {
+     height :80px;
+     width : 100%;
+        display : flex;
+        flex-direction :  row;
+        justify-content : space-between;
+    }
+
+    .wb-c-c {
+        display : flex;
+        width : 40%;
+        flex-direction: column;
+        padding-left : 20px;
+        align-items: left ;
+        justify-content:center;
+        
+    }
+
+
+    .wb-c-c .hashtag {
+        font-weight : bold ;
+        font-size : 20px;
+        color: white;
+    }
+
+    .wb-c-c p
+    {
+        color :rgb(113, 118, 123) ;
+        font-size : 13px;
+        margin:0
+    }
+
+    .wb-c-options {
+        width : 20%;
+        height : 100%;
+        display : flex;
+        flex-direction : row;
+        align-items : right;
+        justify-content : right;
+    }
+
+    .wb-c-options #more {
+        margin-right:10px;
+    }
 
 
     .widget-follow {
