@@ -26,7 +26,7 @@ function Home() {
 
   useEffect(()=>{
     const local = localStorage.getItem("Loggedname")
-    if (Loguser === null || undefined) {
+    if (Loguser === null || undefined || local == null || undefined) {
       setLoguser("GuestLogin")
     }
     else {
