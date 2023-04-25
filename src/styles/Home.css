@@ -411,7 +411,7 @@ input.teext:focus {
     .widget-wh {
         height: 32rem;
         width: 100%;
-        background-color: #202327;
+        background-color: rgb(22, 24, 28); 
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -451,6 +451,11 @@ input.teext:focus {
         justify-content : space-between;
     }
 
+    .wb-container:hover {
+      background-color:   #202327;
+      cursor: pointer;
+    }
+
     .wb-c-c {
         display : flex;
         width : 40%;
@@ -486,6 +491,13 @@ input.teext:focus {
 
     .wb-c-options #more {
         margin-right:10px;
+    }
+
+
+    div#w-footer:hover {
+        background-color: #202327;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
     }
 
 

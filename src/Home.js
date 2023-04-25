@@ -89,7 +89,7 @@ function Home() {
           <p className='hashtag'>#Kiran</p>
           <p>20 tweets</p>
           </div>
-          <div className='wb-c-options'>
+          <div className='wb-c-options' id="more1">
             <MoreHorizOutlinedIcon sx={{color : "grey"}} id="more"/>
           </div>
         </div>
