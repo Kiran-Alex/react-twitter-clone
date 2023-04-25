@@ -115,5 +115,20 @@ a {
 
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6.MuiAlert-root.MuiAlert-filledSuccess.MuiAlert-filled.css-2zk5iu-MuiPaper-root-MuiAlert-root {
   transform: translate(0px, 250px);
-  transition: opacity 1s ease-in-out 0.6;
+}
+
+.css-14ewny {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: rgb(46, 125, 50);
+  display: flex;
+  padding: 6px 16px;
+  color: rgb(255, 255, 255);
+  transform: translateY(250px);
 }
