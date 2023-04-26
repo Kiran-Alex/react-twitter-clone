@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Select from "react-select";
 import "./styles/Home.css"
 import HomeIcon from '@mui/icons-material/Home';
 import TagIcon from '@mui/icons-material/Tag';
@@ -95,6 +96,40 @@ function Home() {
         </div>
       )
   }
+  
+  const MySelect = () => {
+  const [options, setOptions] = useState(initialOptions);
+
+  function handleInputChange(inputValue) {
+    if (!inputValue) {
+      setOptions(initialOptions);
+      return;
+    }
+
+    const filteredOptions = initialOptions.filter((option) =>
+      option.label.toLowerCase().includes(inputValue.toLowerCase())
+    );
+
+    setOptions(filteredOptions);
+  }
+
+  return (
+    <Select
+      placeholder="Search an option"
+      options={options}
+      onInputChange={handleInputChange}
+      isClearable
+      isSearchable
+      classNamePrefix="my-select" // add a custom class name prefix
+    />
+  );
+};
+
+const initialOptions = [
+  { value: "chocolate", label: "Chocolate" },
+  { value: "strawberry", label: "Strawberry" },
+  { value: "vanilla", label: "Vanilla" },
+];
 
   return (
     <div className='tweak'>
@@ -183,7 +218,7 @@ function Home() {
       <div className='widget'>
         <div className='widget-container'>
           <div className='widget-search'>
-          <input type='text'  placeholder='search'/>
+          <MySelect/>
           </div>
           <div className='widget-wh'>
             <div className='widget-wh-header-footer'>
