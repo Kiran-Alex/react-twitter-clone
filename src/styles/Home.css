@@ -388,10 +388,11 @@ input.teext:focus {
     outline: none;
 }
 
-.my-select__control css-13cymwt-control {
-    border-width: none;
-    
+.my-select__control  {
+  border-color: black !important;
 }
+
+
 
 .my-select__dropdown-indicator {
   display: none !important;
@@ -405,6 +406,7 @@ input.teext:focus {
   font-size: large;
   border-style: double;
   border-color: #000000;
+  outline: none;
   color: white;
   padding-left: 40px;
 }
