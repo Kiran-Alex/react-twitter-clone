@@ -5,6 +5,8 @@ import React from 'react';
 import Signup from './Signup'
 import Home from './Home';
 import Tweetbox from './Tweetbox';
+import Explore from './Explore';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Route path='/' element={ <Navigate to="/login"  replace/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/home' element={<Home/>}/>
+      <Route path="/explore" element={<Explore/>}/>
       <Route path='/home/tweet-compose' element={<Tweetbox/>}/>
       </Routes>
     </React.Fragment>

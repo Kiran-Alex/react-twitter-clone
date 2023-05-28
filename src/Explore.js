@@ -21,8 +21,10 @@ import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom"
 
-function Home() {
-  let navigate = useNavigate();
+
+function Explore () {
+
+    let navigate = useNavigate();
   const [Loguser,setLoguser] = useState("GuestLogin")
   function Handleclick(path) {
     navigate(path)
@@ -247,4 +249,4 @@ const initialOptions = [
   )
 }
 
-export default Home;
+export default Explore;
