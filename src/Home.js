@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { twitterlogo } from './assets/Img';
 import Select from "react-select";
 import "./styles/Home.css"
 import HomeIcon from '@mui/icons-material/Home';
@@ -139,7 +140,7 @@ const initialOptions = [
         <div className='sidebar-content'>
           <div className='sidebar-options'>
             <div className='sidebar-options-logo'>
-              <img src='https://previews.dropbox.com/p/thumb/AB6yqNlvM1vWZC548AI_qQFjL7-LH3cOiXhMNZeandvs2pEzRAQwPtSBa1vuvyhJAxGRfzXEZr4keEhEXUVssDsPqbk73tR1D2H3YJrlmAETSngY0kf4zk9dh_tmUD9kbwXd0CC4BTl4Ol-SYLQkl96VsQF340FIJ3s1omC0OOz-rtL1Mi28REYWVKhto97eWkUqDmASHWmTUkwYcAQPvV3YjLGIA1NzjUUFGxofshPmmrTplyu4myvDCUgpLA-VSRLvfwYmnlbp04z2v3m8PaFpTPMxC8UWUSyjMtBLcXXQ5-6R1ad9oQQaWVfYC41dW_mvHBxEI-fd0d3lYzzZ8rZD_hXaOryl3mRKcM1XNBzY8emjUsvukJ7vBPOw7DgRzlo/p.png' alt='twitter logo' draggable="false" />
+              <img src={twitterlogo} alt='twitter logo' draggable="false" />
             </div>
 
             <div className='sidebar-options-content'>

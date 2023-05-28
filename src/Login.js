@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import "./styles/Login.css"
 import "./assets/logo.png"
 import { Link ,useNavigate} from 'react-router-dom'
+import { twitterlogo } from './assets/Img'
 
 function Login() {
   const [Luser, setLuser] = useState("")
   const [Lpw, setLpw] = useState("")
   const [Lmatch, setLmatch] = useState(true)
   const [Log, setLog] = useState(false)
+
 
 
   function assignuser(e) {
@@ -49,7 +51,7 @@ function Login() {
     <div className='page-wrapper'>
       <div className='page-content'>
         <div className='container' >
-          <img src='https://previews.dropbox.com/p/thumb/AB6yqNlvM1vWZC548AI_qQFjL7-LH3cOiXhMNZeandvs2pEzRAQwPtSBa1vuvyhJAxGRfzXEZr4keEhEXUVssDsPqbk73tR1D2H3YJrlmAETSngY0kf4zk9dh_tmUD9kbwXd0CC4BTl4Ol-SYLQkl96VsQF340FIJ3s1omC0OOz-rtL1Mi28REYWVKhto97eWkUqDmASHWmTUkwYcAQPvV3YjLGIA1NzjUUFGxofshPmmrTplyu4myvDCUgpLA-VSRLvfwYmnlbp04z2v3m8PaFpTPMxC8UWUSyjMtBLcXXQ5-6R1ad9oQQaWVfYC41dW_mvHBxEI-fd0d3lYzzZ8rZD_hXaOryl3mRKcM1XNBzY8emjUsvukJ7vBPOw7DgRzlo/p.png' alt='twitter logo' draggable="false" />
+          <img src= {twitterlogo} />
           <form onSubmit={toggleChange}>
             <h1>Sign in to Twitter</h1>
             <input type='text' className='textpass' onChange={assignuser} placeholder='username' />
