@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { twitterlogo } from './assets/Img';
 import Select from "react-select";
 import "./styles/Home.css"
+import "./styles/Explore.css"
 import HomeIcon from '@mui/icons-material/Home';
 import TagIcon from '@mui/icons-material/Tag';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
@@ -178,11 +179,14 @@ const initialOptions = [
       <div className='content'>
         <div className='content-home'>
           <div className='content-home-text1'>
-            <h3>Home</h3>
+          <MySelect/>
           </div>
           <div className='content-home-text2'>
-            <Link className='ch21'>For you</Link>
-            <Link className='ch21'>Following</Link>
+            <Link  class =  "ch211" >For you</Link>
+            <Link class =  "ch211" >Trending</Link>
+            <Link class =  "ch211" >News</Link>
+            <Link class =  "ch211" >Sports</Link>
+            <Link class =  "ch211" >Entertainment</Link>
           </div>
         </div>
         <div className='content-tweetbox'>
