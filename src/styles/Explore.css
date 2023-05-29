@@ -18,3 +18,19 @@ margin-left: 2rem;
     background-color: #6d6d6d2e;
   }
   
+
+  .exc .wb-c-options {
+    align-items: center;
+  }
+
+
+  .exc .wb-container:hover {
+    background-color: #0f1011;
+    cursor: pointer;
+  }
+
+
+  svg#shareicon:hover {
+    color :rgb(29, 155, 240);;
+    cursor: pointer;
+}

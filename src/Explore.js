@@ -100,6 +100,23 @@ function Explore () {
         </div>
       )
   }
+
+  const Excbox = () =>{
+    return(
+      <div className='exc'>
+      <div className='wb-container'>
+        <div className='wb-c-c'>
+        <p>Trending in india</p>
+        <p className='hashtag'>#Kiran</p>
+        <p>20 tweets</p>
+        </div>
+        <div className='wb-c-options' id="more1">
+          <MoreHorizOutlinedIcon sx={{color : "grey"}} id="more"/>
+        </div>
+      </div>
+      </div>
+    )
+  }
   
   const MySelect = () => {
   const [options, setOptions] = useState(initialOptions);
@@ -190,6 +207,7 @@ const initialOptions = [
           </div>
         </div>
         <div className='content-tweetbox'>
+
           <div className='ctbc'>
             <div className='ctbc-img'>
               <AccountCircleSharpIcon id="profile-icon" sx={{ color: "white" }} />
@@ -203,23 +221,27 @@ const initialOptions = [
           </div>
         </div>
         <div className='content-field'>
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
-          <Feedbox />
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
+          <Excbox/>
         </div>
       </div>
       <div className='widget'>
@@ -227,22 +249,7 @@ const initialOptions = [
           <div className='widget-search'>
           <MySelect/>
           </div>
-          <div className='widget-wh'>
-            <div className='widget-wh-header-footer'>
-                <h2> What’s happening</h2>
-            </div>
-            <div className='widget-wh-content'>
-              <Widgetbox/>
-              <Widgetbox/>
-              <Widgetbox/>
-              <Widgetbox/>
-              <Widgetbox/>
-            </div>
-            <div className='widget-wh-header-footer' id="w-footer">
-                <p>Show more</p>
-            </div>
-            
-          </div>
+         
           <div className='widget-follow'>
 
           </div>
