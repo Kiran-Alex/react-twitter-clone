@@ -508,7 +508,7 @@ div#w-footer:hover {
   height: 22rem;
   width: 100%;
   border-radius: 20px;
-  background-color: #202327;
+  background-color: rgb(22, 24, 28);;
   margin-top: 16px;
   position: sticky;
   top: 5rem;

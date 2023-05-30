@@ -1,0 +1,60 @@
+.ch22:hover {
+    background-color: #6d6d6d2e;
+}
+.ch22 {
+    padding: 0px 70px;
+    width: 62px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content-field-1 {
+    height: 100%;
+    position: fixed;
+    width: 585px;
+    margin-top: 109px;
+    border: 1px solid #2f3336;
+    border-top: 0px;
+    display: flex;
+     flex-direction: column; 
+     align-items: center;
+
+}
+
+#imgcn {
+    display: flex;
+    flex-direction: column;
+    width: 431px;
+    height: 415px;
+
+    margin-top: 50px;
+}
+
+#imgn {
+    flex: 1;
+   
+}
+
+#imgn img {
+    width: 100%;
+    height: 80%;
+}
+
+#imgcc {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgcc span {
+    transform: translateY(-49px);
+
+    font-weight: bolder;
+    color: white;;
+    font-size:29px;
+}

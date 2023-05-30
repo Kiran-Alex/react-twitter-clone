@@ -162,11 +162,10 @@ const initialOptions = [
             <div className='sidebar-options-logo'>
               <img src={twitterlogo} alt='twitter logo' draggable="false" />
             </div>
-
             <div className='sidebar-options-content'>
               <span className='sa' onClick={()=>{ Handleclick("/home")}}><HomeIcon sx={{ color: 'white' }} /><Link onClick={(e) => e.preventDefault()}>Home</Link></span>
               <span className='sa' onClick={()=>{ Handleclick("/explore")}}><TagIcon sx={{ color: 'white' }} /><Link>Explore</Link></span>
-              <span className='sa'><NotificationsNoneIcon sx={{ color: 'white' }} /><Link>Notifications</Link></span>
+              <span className='sa' onClick={()=>{ Handleclick("/notification")}}><NotificationsNoneIcon sx={{ color: 'white' }} /><Link>Notifications</Link></span>
               <span className='sa'><EmailOutlinedIcon sx={{ color: "white" }} /><Link>Messages</Link></span>
               <span className='sa'><TurnedInNotOutlinedIcon sx={{ color: "white" }} /><Link>Bookmarks</Link></span>
               <span className='sa'><PersonOutlineOutlinedIcon sx={{ color: "white" }} /><Link>Profile</Link></span>

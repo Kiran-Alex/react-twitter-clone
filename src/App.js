@@ -6,6 +6,7 @@ import Signup from './Signup'
 import Home from './Home';
 import Tweetbox from './Tweetbox';
 import Explore from './Explore';
+import Notification from './Notification';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path='/home' element={<Home/>}/>
       <Route path="/explore" element={<Explore/>}/>
       <Route path='/home/tweet-compose' element={<Tweetbox/>}/>
+      <Route path='/notification' element={<Notification/>}/>
       </Routes>
     </React.Fragment>
   );
