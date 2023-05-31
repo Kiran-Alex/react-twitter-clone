@@ -3,6 +3,7 @@ import { twitterlogo } from './assets/Img';
 import Select from "react-select";
 import "./styles/Home.css"
 import "./styles/Notification.css"
+import "./styles/Bookmarks.css"
 import HomeIcon from '@mui/icons-material/Home';
 import TagIcon from '@mui/icons-material/Tag';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
@@ -22,7 +23,8 @@ import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom"
 
-function Notification() {
+
+const Bookmarks = () => {
     let navigate = useNavigate();
     const [Loguser, setLoguser] = useState("GuestLogin")
     function Handleclick(path) {
@@ -132,9 +134,9 @@ function Notification() {
         { value: "strawberry", label: "Strawberry" },
         { value: "vanilla", label: "Vanilla" },
     ];
-
-    return (
-        <div className='tweak'>
+  return (
+    <div>
+       <div className='tweak'>
             <div className='body'>
 
                 <div className='sidebar'>
@@ -175,24 +177,21 @@ function Notification() {
 
 
                 <div className='content'>
-                    <div className='content-home'>
+                    <div id="c-h" className='content-home'>
                         <div className='content-home-text1'>
-                            <h3>Notifications</h3>
+                            <h3>Bookmarks</h3>
+                            <span>@{Loguser}</span>
                         </div>
-                        <div className='content-home-text2'>
-                            <Link className='ch22'>All</Link>
-                            <Link className='ch22'>Verified</Link>
-                            <Link className='ch22'>Mentions</Link>
-                        </div>
+
                     </div>
 
                     <div className='content-field-1'>
                         <div id="imgcn">
                             <div id='imgn'>
-                                <img src='https://abs.twimg.com/responsive-web/client-web/verification-check-800x400.v1.52677a99.png'></img>
+                                <img src='https://abs.twimg.com/responsive-web/client-web/book-in-bird-cage-800x400.v1.71804389.png'></img>
                             </div>
-                            <div id='imgcc'>
-                                    <span >Nothing to See here — <br></br>yet</span>
+                            <div id='imgcc' className='imgcb'>
+                                    <span id='thead' >Save Tweets for later <span id='vtext'><br></br>Don’t let the good ones fly away!</span> </span>
                             </div>
                         </div>
                     </div>
@@ -225,7 +224,8 @@ function Notification() {
                 </div>
             </div>
         </div>
-    )
+    </div>
+  )
 }
 
-export default Notification;
+export default Bookmarks

@@ -7,6 +7,7 @@ import Home from './Home';
 import Tweetbox from './Tweetbox';
 import Explore from './Explore';
 import Notification from './Notification';
+import Bookmarks from './Bookmarks';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path="/explore" element={<Explore/>}/>
       <Route path='/home/tweet-compose' element={<Tweetbox/>}/>
       <Route path='/notification' element={<Notification/>}/>
+      <Route path='/Bookmarks' element={<Bookmarks/>}/>
       </Routes>
     </React.Fragment>
   );
