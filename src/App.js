@@ -8,6 +8,7 @@ import Tweetbox from './Tweetbox';
 import Explore from './Explore';
 import Notification from './Notification';
 import Bookmarks from './Bookmarks';
+import Messages from './Messages';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Route path='/home/tweet-compose' element={<Tweetbox/>}/>
       <Route path='/notification' element={<Notification/>}/>
       <Route path='/Bookmarks' element={<Bookmarks/>}/>
+      <Route path='/Messages' element={<Messages/>}/>
       </Routes>
     </React.Fragment>
   );

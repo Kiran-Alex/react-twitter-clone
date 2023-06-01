@@ -166,7 +166,7 @@ const initialOptions = [
               <span className='sa' onClick={()=>{ Handleclick("/home")}}><HomeIcon sx={{ color: 'white' }} /><Link onClick={(e) => e.preventDefault()}>Home</Link></span>
               <span className='sa' onClick={()=>{ Handleclick("/explore")}}><TagIcon sx={{ color: 'white' }} /><Link>Explore</Link></span>
               <span className='sa' onClick={()=>{ Handleclick("/notification")}}><NotificationsNoneIcon sx={{ color: 'white' }} /><Link>Notifications</Link></span>
-              <span className='sa'><EmailOutlinedIcon sx={{ color: "white" }} /><Link>Messages</Link></span>
+              <span className='sa'onClick={() => { Handleclick("/Messages") }}><EmailOutlinedIcon sx={{ color: "white" }} /><Link>Messages</Link></span>
               <span className='sa' onClick={()=>{ Handleclick("/Bookmarks")}}><TurnedInNotOutlinedIcon sx={{ color: "white" }} /><Link>Bookmarks</Link></span>
               <span className='sa'><PersonOutlineOutlinedIcon sx={{ color: "white" }} /><Link>Profile</Link></span>
               <span className='sa'><MoreHorizIcon sx={{ color: "white" }} /><Link>More</Link></span>
