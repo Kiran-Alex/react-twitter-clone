@@ -61,6 +61,16 @@
     font-weight: bolder;
 }
 
-.cht2-2 span {
-
+.cht2-3 button {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    width: 65%;
+    height: 55px;
+    border-radius: 32px;
 }
+
+.cht2-3 {
+    margin-top: 10px;
+    transform: translateX(-10px);
+}
+

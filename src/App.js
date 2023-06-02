@@ -9,6 +9,7 @@ import Explore from './Explore';
 import Notification from './Notification';
 import Bookmarks from './Bookmarks';
 import Messages from './Messages';
+import MessageCompose from './MessageCompose';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route path='/notification' element={<Notification/>}/>
       <Route path='/Bookmarks' element={<Bookmarks/>}/>
       <Route path='/Messages' element={<Messages/>}/>
+      <Route path='/Messages/Compose' element={<MessageCompose/>}/>
       </Routes>
     </React.Fragment>
   );

@@ -21,15 +21,18 @@ import IosShareSharpIcon from '@mui/icons-material/IosShareSharp';
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
+import { Button, Modal } from 'antd';
 
 
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom"
 
 
+
 const Messages = () => {
     let navigate = useNavigate();
     const [Loguser, setLoguser] = useState("GuestLogin")
+    const [modal2Open, setModal2Open] = useState(false);
     function Handleclick(path) {
         navigate(path)
     }
@@ -137,85 +140,102 @@ const Messages = () => {
         { value: "strawberry", label: "Strawberry" },
         { value: "vanilla", label: "Vanilla" },
     ];
-  return (
-    <div>
-       <div className='tweak'>
-            <div className='body'>
+    return (
+        <div>
+            <div className='tweak'>
+                <div className='body'>
 
-                <div className='sidebar'>
-                    <div className='sidebar-content'>
-                        <div className='sidebar-options'>
-                            <div className='sidebar-options-logo'>
-                                <img src={twitterlogo} alt='twitter logo' draggable="false" />
-                            </div>
-
-                            <div className='sidebar-options-content'>
-                                <span className='sa' onClick={() => { Handleclick("/home") }}><HomeIcon sx={{ color: 'white' }} /><Link onClick={(e) => e.preventDefault()}>Home</Link></span>
-                                <span className='sa' onClick={() => { Handleclick("/explore") }}><TagIcon sx={{ color: 'white' }} /><Link>Explore</Link></span>
-                                <span className='sa' onClick={() => { Handleclick("/notification") }}><NotificationsNoneIcon sx={{ color: 'white' }} /><Link>Notifications</Link></span>
-                                <span className='sa' onClick={() => { Handleclick("/Messages") }}><EmailOutlinedIcon sx={{ color: "white" }} /><Link>Messages</Link></span>
-                                <span className='sa' onClick={()=>{ Handleclick("/Bookmarks")}}><TurnedInNotOutlinedIcon sx={{ color: "white" }} /><Link>Bookmarks</Link></span>
-                                <span className='sa'><PersonOutlineOutlinedIcon sx={{ color: "white" }} /><Link>Profile</Link></span>
-                                <span className='sa'><MoreHorizIcon sx={{ color: "white" }} /><Link>More</Link></span>
-                            </div>
-                            <div className='sidebar-options-tweet'>
-                                <div className='sat' onClick={() => { Handleclick("/home/tweet-compose") }} ><Link>Tweet</Link></div>
-                            </div>
-                        </div>
-                        <div className='sidebar-profile'>
-                            <div className='sidebar-profile-content'>
-                                <div className='sidebar-profile-content-image'>
-                                    <AccountCircleSharpIcon id="profile-icon" sx={{ color: "white" }} />
+                    <div className='sidebar'>
+                        <div className='sidebar-content'>
+                            <div className='sidebar-options'>
+                                <div className='sidebar-options-logo'>
+                                    <img src={twitterlogo} alt='twitter logo' draggable="false" />
                                 </div>
-                                <div className='sidebar-profile-content-content'>
-                                    <div className='sidebar-profile-content-content-text'>
-                                        <span id='spbold'>{Loguser} <span>@{Loguser}</span> </span>
+
+                                <div className='sidebar-options-content'>
+                                    <span className='sa' onClick={() => { Handleclick("/home") }}><HomeIcon sx={{ color: 'white' }} /><Link onClick={(e) => e.preventDefault()}>Home</Link></span>
+                                    <span className='sa' onClick={() => { Handleclick("/explore") }}><TagIcon sx={{ color: 'white' }} /><Link>Explore</Link></span>
+                                    <span className='sa' onClick={() => { Handleclick("/notification") }}><NotificationsNoneIcon sx={{ color: 'white' }} /><Link>Notifications</Link></span>
+                                    <span className='sa' onClick={() => { Handleclick("/Messages") }}><EmailOutlinedIcon sx={{ color: "white" }} /><Link>Messages</Link></span>
+                                    <span className='sa' onClick={() => { Handleclick("/Bookmarks") }}><TurnedInNotOutlinedIcon sx={{ color: "white" }} /><Link>Bookmarks</Link></span>
+                                    <span className='sa'><PersonOutlineOutlinedIcon sx={{ color: "white" }} /><Link>Profile</Link></span>
+                                    <span className='sa'><MoreHorizIcon sx={{ color: "white" }} /><Link>More</Link></span>
+                                </div>
+                                <div className='sidebar-options-tweet'>
+                                    <div className='sat' onClick={() => { Handleclick("/home/tweet-compose") }} ><Link>Tweet</Link></div>
+                                </div>
+                            </div>
+                            <div className='sidebar-profile'>
+                                <div className='sidebar-profile-content'>
+                                    <div className='sidebar-profile-content-image'>
+                                        <AccountCircleSharpIcon id="profile-icon" sx={{ color: "white" }} />
                                     </div>
-                                    <MoreHorizIcon sx={{ color: "white" }} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className='mcontent'>
-                    <div id="c-h" className='content-home'>
-                        <div id='cht1' className='content-home-text1'>
-                            <h3 id='hci'>Messages</h3>
-
-                            <div className='s-ma'>
-                                <div className='s-ma-s'>
-                                <SettingsOutlinedIcon/>
-                                </div>
-                                <div className='s-ma-ma'>
-                                    <MailOutlinedIcon/>
+                                    <div className='sidebar-profile-content-content'>
+                                        <div className='sidebar-profile-content-content-text'>
+                                            <span id='spbold'>{Loguser} <span>@{Loguser}</span> </span>
+                                        </div>
+                                        <MoreHorizIcon sx={{ color: "white" }} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div  id="cf1" className='content-field-1'>
-                    <div id='cht2'>
-                            <div className='cht2-1'>
-                                <span>Welcome to  your 
+
+                    <div className='mcontent'>
+                        <div id="c-h" className='content-home'>
+                            <div id='cht1' className='content-home-text1'>
+                                <h3 id='hci'>Messages</h3>
+
+                                <div className='s-ma'>
+                                    <div className='s-ma-s'>
+                                        <SettingsOutlinedIcon />
+                                    </div>
+                                    <div className='s-ma-ma'>
+                                        <MailOutlinedIcon />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="cf1" className='content-field-1'>
+                            <div id='cht2'>
+                                <div className='cht2-1'>
+                                    <span>Welcome to  your
                                         Inbox!</span>
-                            </div>
-                            <div className='cht2-2'>
-                                <span>Drop a line, share Tweets and more with private conversations between you and others on Twitter. </span>
+                                </div>
+                                <div className='cht2-2'>
+                                    <span>Drop a line, share Tweets and more with private conversations between you and others on Twitter. </span>
+                                </div>
+
+                                <div className='cht2-3'>
+                                    <button onClick={() => setModal2Open(true)}>Write a message</button>
+                                    <Modal
+                                        title="Vertically centered modal dialog"
+                                        centered
+                                        bodyStyle={{height:500}}
+                                        open={modal2Open}
+                                        footer={null}
+                                        closable={false} 
+                                        onOk={() => setModal2Open(false)}
+                                        onCancel={() => setModal2Open(false)}>
+                                        <p>some contents...</p>
+                                        <p>some contents...</p>
+                                        <p>some contents...</p>
+                                    </Modal>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className='widget'>
-                    <div className='widget-container'>
-                        
+                    <div className='widget'>
+                        <div className='widget-container'>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Messages;
