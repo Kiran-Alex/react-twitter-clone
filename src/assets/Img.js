@@ -1,6 +1,7 @@
+import logo from"./logowsw.png"
 function Img(){
 
 }
 
 export default Img;
-export const twitterlogo= "https://previews.dropbox.com/p/thumb/AB67B8v8h0CJtbqdk50Jqel-NxdVmm8BFhI49nv6wD-dXQvrEaHjV10EzfWK08QNGaxhSkYqouam9SwMyTHTWgwmzbygNp3ixBWJYjcLJhoAprPV20GQL86w0AzS7-Ykln2mskA1qhJhRXlYtyZevPv0VZqOEH3Zbs1b9shzp-wNaseL8Kmqs9aZEWLbFtqC1lPVMLF0XN8lHalZFPuFq7eJr3eZyR6tzdIh7pfTFNDFtrNT3iBpNvPPX8_24PLN1Gb1xSyBTAscKTrA5KL5iSSkjFL88SuDQED19szZ10tz46m4ez83km-8Nd2Q7xoHtOaxAmBmpNwbD5r5uVLCu9mKegqH_Mj2I45tVIht4kftCq3GmuUDyWYecVpPaYABdSkODHVJBxSNfovgrayCNITP/p.png"
+export const twitterlogo= logo
