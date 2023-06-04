@@ -211,12 +211,14 @@ const Messages = () => {
                                 <div className='cht2-3'>
                                     <button onClick={() => setModal2Open(true)}>Write a message</button>
                                     <Modal
-                                        title="Vertically centered modal dialog"
+                                       
                                         centered
                                         bodyStyle={{height:500}}
                                         open={modal2Open}
                                         footer={null}
                                         closable={false} 
+                                        maskStyle={{ backgroundColor: 'rgba(36, 45, 52, 0.782)' }}
+                                        className='reel'
                                         onOk={() => setModal2Open(false)}
                                         onCancel={() => setModal2Open(false)}>
                                         <p>some contents...</p>
