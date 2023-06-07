@@ -213,7 +213,7 @@ const Messages = () => {
                                     <Modal
                                        
                                         centered
-                                        bodyStyle={{height:500}}
+                                        bodyStyle={{height:620,width:400}}
                                         open={modal2Open}
                                         footer={null}
                                         closable={false} 
@@ -221,9 +221,16 @@ const Messages = () => {
                                         className='reel'
                                         onOk={() => setModal2Open(false)}
                                         onCancel={() => setModal2Open(false)}>
-                                        <p>some contents...</p>
-                                        <p>some contents...</p>
-                                        <p>some contents...</p>
+                                        <div className='antcontainer'>
+                                            <div className="antheading">
+
+                                            </div>
+                                            <div className='antsearch'>
+
+                                            </div>
+                                        </div>
+                                    
+                                    
                                     </Modal>
                                 </div>
                             </div>

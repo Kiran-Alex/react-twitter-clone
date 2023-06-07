@@ -76,5 +76,20 @@
 
 .reel .ant-modal-content{
     background-color: black;
+    color: red;
+    padding : 0px;
+    
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    /* padding-top :10px;
+    padding-bottom: 0px ; */
 }
 
+
+.reel .ant-modal-content .antcontainer {
+    background-color: brown;
+    width: 130%;
+    height: 16.5%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
