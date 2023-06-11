@@ -20,6 +20,7 @@ import BarChartSharpIcon from '@mui/icons-material/BarChartSharp';
 import IosShareSharpIcon from '@mui/icons-material/IosShareSharp';
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import ClearOutlinedIcon from '@mui/icons-material/ClearOutlined';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import { Button, Modal } from 'antd';
 
@@ -211,26 +212,36 @@ const Messages = () => {
                                 <div className='cht2-3'>
                                     <button onClick={() => setModal2Open(true)}>Write a message</button>
                                     <Modal
-                                       
+
                                         centered
-                                        bodyStyle={{height:620,width:400}}
+                                        bodyStyle={{ height: 620, width: 400 }}
                                         open={modal2Open}
                                         footer={null}
-                                        closable={false} 
+                                        closable={false}
                                         maskStyle={{ backgroundColor: 'rgba(36, 45, 52, 0.782)' }}
                                         className='reel'
                                         onOk={() => setModal2Open(false)}
                                         onCancel={() => setModal2Open(false)}>
                                         <div className='antcontainer'>
                                             <div className="antheading">
-
+                                                <div className='antsat'>
+                                                    <div className='ants'>
+                                                        <ClearOutlinedIcon/>
+                                                    </div>
+                                                    <div className='antt'>
+                                                        <span>New message</span>
+                                                    </div>
+                                                </div>
+                                                <div className='antbtn'>
+                                                    <button>Next</button>
+                                                </div>
                                             </div>
                                             <div className='antsearch'>
 
                                             </div>
                                         </div>
-                                    
-                                    
+
+
                                     </Modal>
                                 </div>
                             </div>
