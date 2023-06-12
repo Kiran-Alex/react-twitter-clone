@@ -109,8 +109,21 @@
     height: 100%;
     background-color: yellow;
     flex: 1;
+    display: flex;
+    flex-direction: row;
     border-bottom: 2px solid grey;
     
+}
+
+
+.antsl {
+    flex: 0.1;
+    background-color: red;
+}
+
+.antst {
+    flex : 0.7;
+    background-color: purple;
 }
 
 .antsat {
@@ -155,3 +168,4 @@
     font-size: 20px;
     font-weight: bolder;
 }
+
