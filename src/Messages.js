@@ -7,6 +7,7 @@ import "./styles/Bookmarks.css"
 import "./styles/Messages.css"
 import HomeIcon from '@mui/icons-material/Home';
 import TagIcon from '@mui/icons-material/Tag';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import TurnedInNotOutlinedIcon from '@mui/icons-material/TurnedInNotOutlined';
@@ -226,7 +227,7 @@ const Messages = () => {
                                             <div className="antheading">
                                                 <div className='antsat'>
                                                     <div className='ants'>
-                                                        <ClearOutlinedIcon/>
+                                                        <ClearOutlinedIcon />
                                                     </div>
                                                     <div className='antt'>
                                                         <span>New message</span>
@@ -238,10 +239,10 @@ const Messages = () => {
                                             </div>
                                             <div className='antsearch'>
                                                 <div className='antsl'>
-
-                                                    </div>
-                                                    <div className='antst'>
-                                                        </div>
+                                                    <SearchOutlinedIcon id="sicon" sx={{ color: 'rgb(29, 155, 240)' }} />
+                                                </div>
+                                                <div className='antst'>
+                                                </div>
                                             </div>
                                         </div>
 

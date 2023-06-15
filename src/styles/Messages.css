@@ -119,6 +119,16 @@
 .antsl {
     flex: 0.1;
     background-color: red;
+    display  :flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.antsl #sicon {
+    width : 55%;
+    height: 55%;
+    
 }
 
 .antst {
