@@ -226,7 +226,7 @@ const Messages = () => {
                                         <div className='antcontainer'>
                                             <div className="antheading">
                                                 <div className='antsat'>
-                                                    <div className='ants'>
+                                                    <div className='ants' onClick={(e)=>{e.preventDefault();setModal2Open(false)}}>
                                                         <ClearOutlinedIcon />
                                                     </div>
                                                     <div className='antt'>
@@ -242,6 +242,7 @@ const Messages = () => {
                                                     <SearchOutlinedIcon id="sicon" sx={{ color: 'rgb(29, 155, 240)' }} />
                                                 </div>
                                                 <div className='antst'>
+                                                    <input type='text' placeholder='Search people' />
                                                 </div>
                                             </div>
                                         </div>
