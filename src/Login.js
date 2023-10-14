@@ -60,7 +60,7 @@ function Login() {
             <button>Log in</button>
             <button id='gll' ><Link to="/home"> Guest Login</Link></button>
           </form>
-          <span> No account ? <Link to="/signup">Sign up</Link></span>
+          <span> No account ?? <Link to="/signup">Sign up</Link></span>
         </div>
       </div>
     </div>
